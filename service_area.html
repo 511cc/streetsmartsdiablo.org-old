@@ -43,7 +43,10 @@
           </div>
           <div class="menu">
             <div class="wrapper">
+              <button class="hamburger">&#9776;</button>
+              <button class="cross">&times;</button>
               <div class="menu-title">Diablo Region</div>
+              <div class="page-title">Service Area</div>
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -57,10 +60,10 @@
         <div class="wrapper">
           <div class="top-section">
             <h1 class="top-section-title">Service Area</h1>
-            <div class="top-section-photo-full"></div>
+            <div class="top-section-photo"></div>
           </div>
           <div class="content-section">
-            <div class="box full dark box-schools-map">
+            <div class="box dark box-schools-map">
               <div id="schools-map" class="schools-map"></div>
             </div>
           </div>
@@ -81,8 +84,10 @@
         <script>
           L.mapbox.accessToken = 'pk.eyJ1IjoiNTExY29udHJhY29zdGEiLCJhIjoiY2lpemczdmxxMDA1M3RsbHdoZmYzdXRqOSJ9.B4NffnR16BTdMEOewJf0bQ';
 
+          var zoom = (window.innerWidth < 964) ? 9 : 10;
+
           var map = L.mapbox.map('schools-map', 'mapbox.streets')
-            .setView([37.9064, -121.89], 10);
+            .setView([37.9064, -121.89], zoom);
 
           var featureLayer = L.mapbox.featureLayer(null, {
               style: function(feature) { return feature.properties; }
@@ -90,6 +95,8 @@
             .loadURL('data/service_area.geojson')
             .addTo(map);
         </script>
+
+        <script src="js/main.js"></script>
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
