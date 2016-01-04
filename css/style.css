@@ -1,0 +1,462 @@
+body {
+  background: #4695D2;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #4695D2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 964px;
+  margin: 0 auto;
+}
+
+header .clouds {
+  position: absolute;
+  background: url("../img/background-clouds.png") right top no-repeat;
+  width: 357px;
+  height: 74px;
+  top: 10px;
+  padding-left: 589px;
+}
+
+header .logo {
+  background: url("../img/street-smarts-logo.png") 0 0 no-repeat;
+  height: 114px;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  text-indent: -9999px;
+  width: 320px;
+}
+
+header .menu {
+  background: #212121;
+  color: #ffffff;
+  font-size: 12px;
+  height: 52px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+header .menu .menu-title {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 52px;
+  width: 320px;
+  float: left;
+}
+
+header .menu ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header .menu ul li {
+  display: inline-block;
+}
+
+header .menu ul li a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0 20px;
+  line-height: 52px;
+}
+
+header .menu ul li a.active {
+  color: #FEB934;
+}
+
+header .menu ul li a:hover,
+header .menu ul li a.active:hover {
+  background: #FEB934;
+  color: #212121;
+  text-decoration: none;
+}
+
+.top-section {
+  background: #212121;
+  border-radius: 8px;
+  margin-top: 25px;
+  overflow: hidden;
+  padding: 13px;
+  position: relative;
+}
+
+.top-section-photo {
+  background: url("../img/header-home.jpg") 0 0 no-repeat;
+  height: 196px;
+  float: left;
+  width: 629px;
+  margin-right: 26px;
+}
+
+.top-section-photo-full {
+  background: url("../img/header-full.jpg") 0 0 no-repeat;
+  height: 127px;
+  float: left;
+  width: 938px;
+}
+
+.top-section-title {
+  color: #ffffff;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.top-section-text {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.content-section {
+  overflow: hidden;
+}
+
+.box {
+  color: #212121;
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
+
+.box.dark {
+  background: #212121;
+}
+
+.full {
+  width: 100%;
+  padding: 20px;
+  height: 250px;
+}
+
+.half {
+  width: 49%;
+  float: left;
+  margin-right: 2%;
+  padding: 20px;
+  height: 250px;
+}
+
+.half:nth-child(2n) {
+  margin-right: 0;
+}
+
+.two-thirds {
+  width: 66%;
+  float: left;
+  margin-right: 2%;
+  padding: 20px;
+  height: 250px;
+}
+
+.one-third {
+  width: 32%;
+  float: left;
+  padding: 20px;
+  height: 250px;
+}
+
+.thirds {
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  padding: 20px;
+  height: 250px;
+}
+
+.thirds:nth-child(3n) {
+  margin-right: 0;
+}
+
+.box h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.box .box-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.box .box-text.bottom {
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  width: 87%;
+}
+
+.box-about {
+  background-image: url("../img/511cc-logo.png");
+  background-size: 176px 106px;
+  background-repeat: no-repeat;
+  background-position: right 20px top 20px;
+  height: 220px;
+}
+
+.box-programs {
+  background-image: url("../img/beeps.png");
+  background-size: 122px 112px;
+  background-repeat: no-repeat;
+  background-position: right 20px top 20px;
+  height: 220px;
+}
+
+.box-service-area {
+  background-image: url("../img/cc-map.png");
+  background-size: 209px 115px;
+  background-repeat: no-repeat;
+  background-position: right 20px top 40px;
+  height: 220px;
+}
+
+.box-schools-map {
+  height: 397px;
+}
+
+.schools-map {
+  padding: 13px;
+  height: 331px;
+}
+
+.box-contact {
+  height: 300px;
+}
+
+.box-supporters {
+  height: 300px;
+}
+
+
+.box-supporters .logo {
+  text-indent: -9999px;
+  float: left;
+}
+
+.box-supporters .box-supporters-511cc {
+  background: url("../img/511cc-logo.png") 0 0 no-repeat;
+  background-size: 148px 86px;
+  margin-top: 10px;
+  width: 148px;
+  height: 86px;
+  margin-top: 20px;
+}
+
+.box-supporters .box-supporters-ccta {
+  background: url("../img/ccta-logo.png") 0 0 no-repeat;
+  background-size: 205px 58px;
+  width: 205px;
+  height: 58px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.box-supporters .box-supporters-baaqmd {
+  background: url("../img/baaqmd-logo.png") 0 0 no-repeat;
+  background-size: 152px 76px;
+  width: 152px;
+  height: 76px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+
+.box-supporters .box-text {
+  clear: both;
+  padding-top: 5px;
+}
+
+.box-k-2 {
+  background-image: url("../img/beeps.png");
+  background-position: left 15px top 30px;
+  background-repeat: no-repeat;
+  background-size: 174px 159px;
+  height: 275px;
+}
+
+.box-k-2 .box-text,
+.box-k-2 h2 {
+  padding-left: 195px;
+}
+
+.box-3-5 {
+  background-image: url("../img/heads-up.png");
+  background-position: left 15px top 15px;
+  background-repeat: no-repeat;
+  background-size: 156px 233px;
+  height: 275px;
+}
+
+.box-3-5 .box-text,
+.box-3-5 h2 {
+  padding-left: 175px;
+}
+
+.box-6-8 {
+  background-image: url("../img/bmx.png");
+  background-position: left 15px top 15px;
+  background-repeat: no-repeat;
+  background-size: 164px 177px;
+}
+
+.box-6-8 .box-text,
+.box-6-8 h2 {
+  padding-left: 185px;
+}
+
+.box-9-12 {
+  background-image: url("../img/chp-program.jpg");
+  background-position: left 15px top 15px;
+  background-repeat: no-repeat;
+  background-size: 156px 203px;
+}
+
+.box-9-12 .box-text,
+.box-9-12 h2 {
+  padding-left: 175px;
+}
+
+footer {
+  background-image: linear-gradient(-180deg, #454545 0%, #212121 100%);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  height: 106px;
+  margin-top: 25px;
+}
+
+footer .copyright {
+  color: #ffffff;
+  float: left;
+  padding-top: 60px;
+  font-size: 12px;
+}
+
+footer .footer-logo {
+  float: right;
+  text-indent: -9999px;
+  margin-top: 10px;
+}
+
+footer .footer-logo-511cc {
+  width: 129px;
+  height: 80px;
+  background: url("../img/footer-logo-511cc.png") 0 0 no-repeat;
+}
+
+footer .footer-logo-street-smarts {
+  width: 201px;
+  height: 80px;
+  background: url("../img/footer-logo-street-smarts.png") 0 0 no-repeat;
+  margin-right: 20px;
+}
+
+.btn {
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 18px;
+}
+
+.btn-blue {
+  background: #4695D2;
+  color: #ffffff;
+}
+
+.btn-blue:hover {
+  text-decoration: none;
+  background: #4089c2;
+}
+
+.btn-right {
+  float: right;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  header .clouds {
+    background-image: url("../img/background-clouds@2x.png");
+    background-size: 357px 74px;
+  }
+
+  header .logo {
+    background-image: url("../img/street-smarts-logo@2x.png");
+    background-size: 320px 114px;
+  }
+
+  .top-section-photo {
+    background-image: url("../img/header-home@2x.jpg");
+    background-size: 629px 196px;
+  }
+
+  .top-section-photo-full {
+    background-image: url("../img/header-full@2x.jpg");
+    background-size: 938px 127px;
+  }
+
+  .box-about {
+    background-image: url("../img/511cc-logo@2x.png");
+  }
+
+  .box-programs {
+    background-image: url("../img/beeps@2x.png");
+  }
+
+  .box-service-area {
+    background-image: url("../img/cc-map@2x.png");
+  }
+
+  footer .footer-logo-511cc {
+    background-image: url("../img/footer-logo-511cc@2x.png");
+    background-size: 129px 80px;
+  }
+
+  footer .footer-logo-street-smarts {
+    background-image: url("../img/footer-logo-street-smarts@2x.png");
+    background-size: 201px 80px;
+  }
+
+  .box-supporters .box-supporters-511cc {
+    background-image: url("../img/511cc-logo.png");
+  }
+
+  .box-supporters .box-supporters-ccta {
+    background-image: url("../img/ccta-logo.png");
+  }
+
+  .box-supporters .box-supporters-baaqmd {
+    background-image: url("../img/baaqmd-logo.png");
+  }
+
+  .box-k-2 {
+    background-image: url("../img/beeps@2x.png");
+  }
+
+  .box-3-5 {
+    background-image: url("../img/heads-up@2x.png");
+  }
+
+  .box-6-8 {
+    background-image: url("../img/bmx@2x.png");
+  }
+
+  .box-9-12 {
+    background-image: url("../img/chp-program@2x.jpg");
+  }
+}
