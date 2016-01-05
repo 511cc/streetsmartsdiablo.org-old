@@ -116,6 +116,7 @@ header .menu ul li a.active:hover {
 .top-section-content .top-section-photo {
   background: url("../img/header-home.jpg") center center no-repeat;
   background-size: cover;
+  border-radius: 5px;
   height: 100px;
   width: 100%;
 }
@@ -422,6 +423,7 @@ footer .footer-logo-street-smarts {
   .top-section-photo {
     background: url("../img/header-full.jpg") 0 0 no-repeat;
     background-size: 936px 127px;
+    border-radius: 5px;
     height: 127px;
     float: left;
     width: 936px;
