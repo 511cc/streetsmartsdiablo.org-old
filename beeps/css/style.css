@@ -1,0 +1,743 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: linear-gradient(0deg, #DAF3FC 0%, #357DD2 100%);
+  color: #212121;
+}
+
+a {
+  color: #4695D2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+header .logo {
+  background: url("../img/beeps-logo.png") 0 0 no-repeat;
+  background-size: 309px 114px;
+  height: 114px;
+  margin: 0;
+  position: absolute;
+  top: 3px;
+  left: 60px;
+  text-indent: -9999px;
+  width: 209px;
+}
+
+header .hamburger,
+header .cross {
+  color: #ffffff;
+  font-size: 33px;
+  background: none;
+  border: 0;
+}
+
+header .hamburger {
+  padding: 0 10px;
+}
+
+header .cross {
+  display: none;
+  padding: 3px 15px;
+}
+
+header .menu {
+  color: #ffffff;
+  font-size: 22px;
+  height: 52px;
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 0.91px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+}
+
+header .menu .page-title {
+  font-size: 16px;
+  float: right;
+  line-height: 52px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+header .menu ul {
+  display: none;
+  position: absolute;
+  top: 52px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  z-index: 1001;
+}
+
+header .menu ul li a {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0 20px;
+  line-height: 52px;
+  border-top: 1px solid #393737;
+}
+
+header .menu ul li a.active {
+  color: #2061AC;
+}
+
+header .menu ul li a:hover,
+header .menu ul li a.active:hover {
+  color: #2061AC;
+}
+
+.top-section {
+  overflow: hidden;
+}
+
+.top-section h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+  width: 530px;
+  float: right;
+}
+
+.top-section-home {
+  background: url("../img/beeps.png") left 20px top no-repeat;
+}
+
+.top-section .top-section-text {
+  float: right;
+  width: 530px;
+}
+
+.content-section {
+  overflow: hidden;
+  margin: 0 20px;
+  clear: both;
+}
+
+.box {
+  color: #212121;
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  min-height: 140px;
+}
+
+.box.dark {
+  background: #212121;
+}
+
+.box h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.box .box-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.box.box-home .box-text {
+  margin: 10px 110px 0 0;
+}
+
+.box .box-text .half-column {
+  width: 49%;
+  float: left;
+}
+
+.box .box-text .half-column:nth-child(2n) {
+  margin-left: 1%;
+}
+
+.box .box-image {
+  margin: 20px auto;
+}
+
+.box.box-home .box-image {
+  margin: 0;
+  float: right;
+}
+
+.box.box-about .box-image {
+  background: url("../img/street-smarts-logo.png") 0 0 no-repeat;
+  background-size: 100px 38px;
+  height: 38px;
+  width: 100px;
+}
+
+.box.box-activities .box-image {
+  background: url("../img/activities.png") 0 0 no-repeat;
+  background-size: 100px 63px;
+  height: 63px;
+  width: 100px;
+}
+
+.box.box-beeps-on-tour .box-image {
+  background: url("../img/beeps-on-tour.png") 0 0 no-repeat;
+  background-size: 100px 65px;
+  height: 65px;
+  width: 100px;
+}
+
+.box.box-history .box-image {
+  background: url("../img/beeps-car.png") 0 0 no-repeat;
+  background-size: 179px 149px;
+  height: 149px;
+  width: 179px;
+}
+
+.box.box-schools-map {
+  height: 385px;
+}
+
+.box.box-schools-map .schools-map {
+  height: 357px;
+}
+
+.box.box-contact .btn-email {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box.box-supporters .logo {
+  text-indent: -9999px;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+.box.box-supporters .box-supporters-street-smarts {
+  background: url("../img/street-smarts-logo.png") 0 0 no-repeat;
+  background-size: 245px 94px;
+  width: 245px;
+  height: 94px;
+}
+
+.box.box-supporters .box-supporters-511cc {
+  background: url("../img/511cc-logo.png") 0 0 no-repeat;
+  background-size: 148px 86px;
+  width: 148px;
+  height: 86px;
+}
+
+.box.box-supporters .box-supporters-ccta {
+  background: url("../img/ccta-logo.png") 0 0 no-repeat;
+  background-size: 205px 58px;
+  width: 205px;
+  height: 58px;
+}
+
+.box.box-supporters .box-supporters-baaqmd {
+  background: url("../img/baaqmd-logo.png") 0 0 no-repeat;
+  background-size: 152px 76px;
+  width: 152px;
+  height: 76px;
+}
+
+.box.box-supporters .box-text {
+  clear: both;
+  padding-top: 5px;
+}
+
+.box.box-video .video {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box.box-video .video.video-centered {
+  width: 100%;
+  float: none;
+}
+
+.box.box-video .video-title {
+  width: 184px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.box.box-video .video img {
+  height: 135px;
+  width: 180px;
+}
+
+.box.box-puzzles .box-image {
+  background: url("../img/coloring-book-sample.png") 0 0 no-repeat;
+  background-size: 93px 250px;
+  width: 93px;
+  height: 250px;
+}
+
+.box.box-tour-schedule {
+  height: auto;
+  margin-left: 40%;
+  width: 60%;
+}
+
+.box.box-tour-schedule h1 {
+  text-align: center;
+}
+
+.box.box-tour-schedule h3 {
+  text-align: center;
+}
+
+.box.box-tour-schedule .box-text {
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  line-height: 20px;
+  padding-bottom: 40px;
+}
+
+.beeps-on-tour-background {
+  background: url("../img/beeps-on-tour.png") 0 0 no-repeat;
+  background-size: 551px 355px;
+  height: 355px;
+  width: 551px;
+  position: absolute;
+  top: 111px;
+  z-index: -2;
+}
+
+.beeps-on-tour-inquiry {
+  float: left;
+  width: 342px;
+  margin-top: 240px;
+}
+
+footer {
+  background-image: linear-gradient(-180deg, #454545 0%, #212121 100%);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  height: 106px;
+  margin-top: 25px;
+  position: relative;
+}
+
+footer .copyright {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 78px;
+}
+
+footer .footer-logo {
+  text-indent: -9999px;
+  display: block;
+}
+
+footer .footer-logo-511cc {
+  width: 97px;
+  height: 60px;
+  background: url("../img/footer-logo-511cc.png") 0 0 no-repeat;
+  background-size: 97px 60px;
+  position: absolute;
+  top: 6px;
+  right: 20px;
+}
+
+footer .footer-logo-street-smarts {
+  width: 151px;
+  height: 60px;
+  background: url("../img/footer-logo-street-smarts.png") 0 0 no-repeat;
+  background-size: 151px 60px;
+  margin-right: 40px;
+  position: absolute;
+  top: 6px;
+  left: 20px;
+}
+
+.btn {
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 18px;
+}
+
+.btn-blue {
+  background: #4695D2;
+  color: #ffffff;
+}
+
+.btn-blue:hover {
+  text-decoration: none;
+  background: #4089c2;
+}
+
+.btn-right {
+  float: right;
+}
+
+@media only screen and (min-width: 964px) {
+  .wrapper {
+    width: 964px;
+    margin: 0 auto;
+  }
+
+  .header-background {
+    background: url("../img/header-background.png") center top no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -92px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  header .logo {
+    background-size: 320px 114px;
+    height: 114px;
+    margin: 0;
+    top: 10px;
+    left: auto;
+    width: 320px;
+  }
+
+  header .menu {
+    margin-top: 60px;
+    overflow: hidden;
+  }
+
+  header .menu .page-title {
+    display: none;
+  }
+
+  header .hamburger {
+    display: none;
+  }
+
+  header .cross {
+    display: none;
+  }
+
+  header .menu ul {
+    display: block;
+    float: right;
+    position: relative;
+    top: 0;
+    width: auto;
+  }
+
+  header .menu ul li {
+    display: inline-block;
+  }
+
+  header .menu ul li a {
+    display: inline-block;
+    border-top: 0;
+  }
+
+  .content-section {
+    margin: 0;
+  }
+
+  .box {
+    height: 250px;
+  }
+
+  .box.box-home .box-text {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    width: 87%;
+  }
+
+  .box.half {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .box.half:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .box.thirds {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .box.thirds:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .box.box-home {
+    height: 220px;
+  }
+
+  .box.box-home .box-image {
+    top: 14px;
+    right: 14px;
+    left: auto;
+  }
+
+  .box.box-about .box-image {
+    background-size: 245px 94px;
+    height: 94px;
+    width: 245px;
+    top: 50px;
+    right: 30px;
+  }
+
+  .box.box-activities .box-image {
+    background-size: 200px 126px;
+    height: 126px;
+    width: 200px;
+    top: 39px;
+    right: 51px;
+  }
+
+  .box.box-activities h2 {
+    text-align: center;
+  }
+
+  .box.box-beeps-on-tour .box-image {
+    background-size: 305px 199px;
+    height: 199px;
+    width: 305px;
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+
+  .box.box-beeps-on-tour h2 {
+    text-align: right;
+  }
+
+  .box.box-contact {
+    height: 280px;
+  }
+
+  .box.box-history {
+    height: 280px;
+    padding-right: 230px;
+  }
+
+  .box.box-history .box-image {
+    right: 20px;
+    left: auto;
+    top: 60px;
+    margin: 0;
+  }
+
+  .box.box-supporters .logo {
+    float: left;
+    margin-top: 0;
+  }
+
+  .box.box-supporters .supporters-section {
+    float: right;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .box.box-supporters .box-supporters-street-smarts {
+    float: left;
+  }
+
+  .box.box-supporters .box-supporters-511cc {
+    float: right;
+    margin-right: 20px;
+  }
+
+  .box.box-supporters .box-supporters-ccta {
+    float: left;
+  }
+
+  .box.box-supporters .box-supporters-baaqmd {
+    float: right;
+    margin-right: 20px;
+    clear: both;
+  }
+
+  .box.box-video {
+    height: 430px;
+  }
+
+  .box.box-puzzles {
+    height: 430px;
+  }
+
+  .box.box-puzzles .coloring-book {
+    float: left;
+    width: 184px;
+    height: 234px;
+    margin-left: 36px;
+  }
+
+  .box.box-puzzles .box-image {
+    right: 40px;
+    left: auto;
+    top: 93px;
+    margin: 0;
+  }
+
+  .box.box-video-player {
+    width: 700px;
+    height: 445px;
+    float: left;
+    padding: 25px;
+  }
+
+  .box.box-video-player h2 {
+    margin-bottom: 10px;
+  }
+
+  .box.box-video-sidebar {
+    width: 235px;
+    float: right;
+    height: 445px;
+    padding: 25px;
+  }
+
+  .box.box-video-sidebar h2 {
+    margin-bottom: 10px;
+  }
+
+  .box.box-video-sidebar .video {
+    margin-bottom: 25px;
+  }
+
+  .box.box-video-sidebar .video img {
+    width: 185px;
+    height: 123px;
+  }
+
+  .box-image {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    margin: 0;
+  }
+
+  .box.box-k-2 .box-text,
+  .box.box-k-2 h2 {
+    padding-left: 195px;
+  }
+
+  .box.box-3-5 .box-text,
+  .box.box-3-5 h2 {
+    padding-left: 175px;
+  }
+
+  .box.box-6-8 .box-text,
+  .box.box-6-8 h2 {
+    padding-left: 185px;
+  }
+
+  .box.box-9-12 .box-text,
+  .box.box-9-12 h2 {
+    padding-left: 175px;
+  }
+
+  footer .footer-logo {
+    float: right;
+    margin-top: 10px;
+  }
+
+  footer .footer-logo-511cc {
+    width: 129px;
+    height: 80px;
+    background-size: 129px 80px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  footer .footer-logo-street-smarts {
+    width: 201px;
+    height: 80px;
+    background-size: 201px 80px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  footer .copyright {
+    float: left;
+    padding-top: 75px;
+    font-size: 12px;
+  }
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+  .header-background {
+    background-image: url("../img/header-background@2x.png");
+  }
+
+  header .logo {
+    background-image: url("../img/beeps-logo@2x.png");
+  }
+
+  .box.box-about .box-image {
+    background-image: url("../img/street-smarts-logo@2x.png");
+  }
+
+  .box.box-programs .box-image {
+    background-image: url("../img/activities@2x.png");
+  }
+
+  .box.box-beeps-on-tour .box-image {
+    background-image: url("../img/beeps-on-tour@2x.png");
+  }
+
+  .box.box-puzzles .box-image {
+    background-image: url("../img/coloring-book-sample@2x.png");
+  }
+
+  footer .footer-logo-511cc {
+    background-image: url("../img/footer-logo-511cc@2x.png");
+  }
+
+  footer .footer-logo-street-smarts {
+    background-image: url("../img/footer-logo-street-smarts@2x.png");
+  }
+
+  .box.box-supporters .box-supporters-511cc {
+    background-image: url("../img/511cc-logo.png");
+  }
+
+  .box.box-supporters .box-supporters-ccta {
+    background-image: url("../img/ccta-logo.png");
+  }
+
+  .box.box-supporters .box-supporters-baaqmd {
+    background-image: url("../img/baaqmd-logo.png");
+  }
+
+  .box.box-k-2 .box-image {
+    background-image: url("../img/beeps@2x.png");
+  }
+
+  .box.box-3-5 .box-image {
+    background-image: url("../img/heads-up@2x.png");
+  }
+
+  .box.box-6-8 .box-image {
+    background-image: url("../img/bmx@2x.png");
+  }
+
+  .box.box-9-12 .box-image {
+    background-image: url("../img/chp-program@2x.jpg");
+  }
+}
