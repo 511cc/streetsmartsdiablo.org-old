@@ -182,14 +182,14 @@ header .menu ul li a.active:hover {
 }
 
 .box.box-programs .box-image {
-  background-image: url("../img/beeps.png") 0 0 no-repeat;
+  background: url("../img/beeps.png") 0 0 no-repeat;
   background-size: 100px 92px;
   height: 92px;
   width: 100px;
 }
 
 .box.box-service-area .box-image {
-  background-image: url("../img/cc-map.png") 0 0 no-repeat;
+  background: url("../img/cc-map.png") 0 0 no-repeat;
   background-size: 100px 55px;
   height: 55px;
   width: 100px;
@@ -472,6 +472,13 @@ footer .footer-logo-street-smarts {
     margin-right: 0;
   }
 
+  .box .box-image {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    margin: 0;
+  }
+
   .box.box-home {
     height: 220px;
   }
@@ -525,13 +532,6 @@ footer .footer-logo-street-smarts {
   .box.box-supporters .box-supporters-baaqmd {
     margin-left: 60px;
     margin-bottom: 10px;
-  }
-
-  .box-image {
-    position: absolute;
-    top: 14px;
-    left: 14px;
-    margin: 0;
   }
 
   .box.box-k-2 .box-text,
