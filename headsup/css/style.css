@@ -1,5 +1,5 @@
 body {
-  background: #86858a url("../img/concrete-background.png") 0 0 repeat;
+  background: #86858a url("../img/concrete-background.jpg") 0 0 repeat;
   background-size: cover;
   font-family: 'Bitter', sans-serif;
 }
@@ -594,6 +594,9 @@ footer .footer-logo-street-smarts {
 @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
+  body {
+    background-image: url("../img/concrete-background.jpg");
+  }
 
   .box.box-about .box-image {
     background-image: url("../img/street-smarts-logo@2x.png");
