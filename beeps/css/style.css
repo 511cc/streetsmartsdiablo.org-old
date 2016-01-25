@@ -15,23 +15,24 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 1.5px;
 }
 
 header .logo {
   background: url("../img/beeps-logo.png") 0 0 no-repeat;
-  background-size: 309px 114px;
-  height: 114px;
+  background-size: 135px 45px;
+  height: 45px;
   margin: 0;
   position: absolute;
   top: 3px;
   left: 60px;
   text-indent: -9999px;
-  width: 209px;
+  width: 135px;
 }
 
 header .hamburger,
 header .cross {
-  color: #ffffff;
+  color: #2061AC;
   font-size: 33px;
   background: none;
   border: 0;
@@ -47,15 +48,18 @@ header .cross {
 }
 
 header .menu {
+  background: #FEB508;
   color: #ffffff;
   font-size: 22px;
   height: 52px;
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: 0.91px;
   text-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+  letter-spacing: 1.5px;
 }
 
 header .menu .page-title {
+  color: #2061AC;
   font-size: 16px;
   float: right;
   line-height: 52px;
@@ -72,13 +76,15 @@ header .menu ul {
   padding: 0;
   list-style-type: none;
   z-index: 1001;
+  background: #ffffff;
+  border-bottom: 1px solid #393737;
 }
 
 header .menu ul li a {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
-  color: #ffffff;
+  color: #212121;
   padding: 0 20px;
   line-height: 52px;
   border-top: 1px solid #393737;
@@ -98,19 +104,18 @@ header .menu ul li a.active:hover {
 }
 
 .top-section h2 {
-  font-size: 40px;
-  margin-bottom: 0;
-  width: 530px;
-  float: right;
+  font-size: 22px;
+  margin: 20px;
+  text-align: center;
 }
 
 .top-section-home {
-  background: url("../img/beeps.png") left 20px top no-repeat;
+  background: url("../img/beeps.png") center bottom -25px no-repeat;
+  padding-bottom: 225px;
 }
 
 .top-section .top-section-text {
-  float: right;
-  width: 530px;
+  margin: 20px;
 }
 
 .content-section {
@@ -183,26 +188,11 @@ header .menu ul li a.active:hover {
   width: 100px;
 }
 
-.box.box-beeps-on-tour .box-image {
-  background: url("../img/beeps-on-tour.png") 0 0 no-repeat;
+.box.box-school-assemblies .box-image {
+  background: url("../img/school-assemblies.png") 0 0 no-repeat;
   background-size: 100px 65px;
   height: 65px;
   width: 100px;
-}
-
-.box.box-history .box-image {
-  background: url("../img/beeps-car.png") 0 0 no-repeat;
-  background-size: 179px 149px;
-  height: 149px;
-  width: 179px;
-}
-
-.box.box-schools-map {
-  height: 385px;
-}
-
-.box.box-schools-map .schools-map {
-  height: 357px;
 }
 
 .box.box-contact .btn-email {
@@ -210,6 +200,20 @@ header .menu ul li a.active:hover {
   margin: 0 auto;
   display: block;
   margin-bottom: 10px;
+}
+
+.box.box-program .box-image {
+  background: url("../img/beeps.png") 0 0 no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  bottom: 0;
+  top: auto;
+  margin-bottom: 0;
+}
+
+.box.box-supporters {
+  font-size: 14px;
 }
 
 .box.box-supporters .logo {
@@ -304,8 +308,8 @@ header .menu ul li a.active:hover {
   padding-bottom: 40px;
 }
 
-.beeps-on-tour-background {
-  background: url("../img/beeps-on-tour.png") 0 0 no-repeat;
+.school-assemblies-background {
+  background: url("../img/school-assemblies.png") 0 0 no-repeat;
   background-size: 551px 355px;
   height: 355px;
   width: 551px;
@@ -314,10 +318,11 @@ header .menu ul li a.active:hover {
   z-index: -2;
 }
 
-.beeps-on-tour-inquiry {
+.school-assemblies-inquiry {
   float: left;
   width: 342px;
   margin-top: 240px;
+  font-size: 14px;
 }
 
 footer {
@@ -333,6 +338,7 @@ footer .copyright {
   margin: 0 auto;
   text-align: center;
   padding-top: 78px;
+  font-size: 12px;
 }
 
 footer .footer-logo {
@@ -391,25 +397,26 @@ footer .footer-logo-street-smarts {
 
   .header-background {
     background: url("../img/header-background.png") center top no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: -92px;
     left: 0;
-    height: 300px;
+    height: 305px;
     width: 100%;
     z-index: -1;
   }
 
   header .logo {
-    background-size: 320px 114px;
+    background-size: 309px 114px;
     height: 114px;
     margin: 0;
     top: 10px;
     left: auto;
-    width: 320px;
+    width: 309px;
   }
 
   header .menu {
+    background: none;
     margin-top: 60px;
     overflow: hidden;
   }
@@ -432,6 +439,8 @@ footer .footer-logo-street-smarts {
     position: relative;
     top: 0;
     width: auto;
+    background: none;
+    border-bottom: 0;
   }
 
   header .menu ul li {
@@ -441,6 +450,27 @@ footer .footer-logo-street-smarts {
   header .menu ul li a {
     display: inline-block;
     border-top: 0;
+    color: #ffffff;
+    line-height: 24px;
+  }
+
+  .top-section h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    width: 600px;
+    float: right;
+  }
+
+  .top-section-home {
+    background-position: left 20px top 25px;
+    padding-bottom: 0;
+    height: 253px;
+    padding-top: 25px;
+  }
+
+  .top-section .top-section-text {
+    float: right;
+    width: 530px;
   }
 
   .content-section {
@@ -508,7 +538,7 @@ footer .footer-logo-street-smarts {
     text-align: center;
   }
 
-  .box.box-beeps-on-tour .box-image {
+  .box.box-school-assemblies .box-image {
     background-size: 305px 199px;
     height: 199px;
     width: 305px;
@@ -517,24 +547,20 @@ footer .footer-logo-street-smarts {
     right: auto;
   }
 
-  .box.box-beeps-on-tour h2 {
+  .box.box-school-assemblies h2 {
     text-align: right;
   }
 
   .box.box-contact {
-    height: 280px;
+    height: 300px;
   }
 
   .box.box-history {
-    height: 280px;
-    padding-right: 230px;
+    height: 300px;
   }
 
-  .box.box-history .box-image {
-    right: 20px;
-    left: auto;
-    top: 60px;
-    margin: 0;
+  .box.box-program {
+    height: 300px;
   }
 
   .box.box-supporters .logo {
@@ -673,7 +699,6 @@ footer .footer-logo-street-smarts {
   footer .copyright {
     float: left;
     padding-top: 75px;
-    font-size: 12px;
   }
 }
 
@@ -697,8 +722,8 @@ footer .footer-logo-street-smarts {
     background-image: url("../img/activities@2x.png");
   }
 
-  .box.box-beeps-on-tour .box-image {
-    background-image: url("../img/beeps-on-tour@2x.png");
+  .box.box-school-assemblies .box-image {
+    background-image: url("../img/school-assemblies@2x.png");
   }
 
   .box.box-puzzles .box-image {
