@@ -1,0 +1,597 @@
+body {
+  background: #86858a url("../img/concrete-background.png") 0 0 repeat;
+  background-size: cover;
+  font-family: 'Bitter', sans-serif;
+}
+
+a {
+  color: #557836;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header .logo {
+  color: #FFFFFF;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  width: 400px;
+  font-size: 70px;
+  font-family: Bitter-Bold;
+  letter-spacing: 2.91px;
+  line-height: 95px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+}
+
+header .hamburger,
+header .cross {
+  color: #ffffff;
+  font-size: 33px;
+  background: none;
+  border: 0;
+}
+
+header .hamburger {
+  padding: 0 10px;
+}
+
+header .cross {
+  display: none;
+  padding: 3px 15px;
+}
+
+header .menu {
+  color: #ffffff;
+  font-size: 16px;
+  height: 52px;
+  font-family: Bitter-Bold;
+  letter-spacing: 0.66px;
+  line-height: 21px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+}
+
+header .menu .page-title {
+  font-size: 16px;
+  float: right;
+  line-height: 52px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+header .menu ul {
+  display: none;
+  position: absolute;
+  top: 52px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  z-index: 1001;
+}
+
+header .menu ul li a {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0 20px;
+  line-height: 52px;
+  border-top: 1px solid #393737;
+}
+
+header .menu ul li a.active {
+  color: #FDBA30;
+}
+
+header .menu ul li a:hover,
+header .menu ul li a.active:hover {
+  background: #FDBA30;
+  color: #212121;
+  text-decoration: none;
+}
+
+.top-section {
+  overflow: hidden;
+  position: relative;
+  margin: 25px auto 0;
+  text-align: center;
+  width: 660px;
+}
+
+.top-section h1 {
+  font-family: Bitter-Bold;
+  font-size: 36px;
+  color: #FDBA30;
+  letter-spacing: 1px;
+  line-height: 42px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+}
+
+.top-section .top-section-text {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+}
+
+.content-section {
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.box {
+  color: #212121;
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  min-height: 140px;
+}
+
+.box h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.box .box-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.box.box-home .box-text {
+  margin: 10px 110px 0 0;
+}
+
+.box .box-text .half-column {
+  width: 49%;
+  float: left;
+}
+
+.box .box-text .half-column:nth-child(2n) {
+  margin-left: 1%;
+}
+
+.box .box-image {
+  margin: 20px auto;
+}
+
+.box.box-home .box-image {
+  margin: 0;
+  float: right;
+}
+
+.box.box-about .box-image {
+  background: url("../img/street-smarts-logo.png") 0 0 no-repeat;
+  background-size: 100px 38px;
+  height: 38px;
+  width: 100px;
+}
+
+.box.box-videos .box-image {
+  background: url("../img/watermelon.png") 0 0 no-repeat;
+  background-size: 100px 70px;
+  height: 70px;
+  width: 100px;
+}
+
+.box.box-on-the-road .box-image {
+  background: url("../img/helmets.png") 0 0 no-repeat;
+  background-size: 100px 60px;
+  height: 60px;
+  width: 100px;
+}
+
+.box.box-contact .btn-email {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box.box-history .box-text {
+  line-height: 22px;
+}
+
+.box.box-history .box-image {
+  background: url("../img/history.png") 0 0 no-repeat;
+  background-size: 179px 149px;
+  height: 149px;
+  width: 179px;
+}
+
+.box.box-supporters .logo {
+  text-indent: -9999px;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+.box.box-supporters .box-text {
+  line-height: 22px;
+}
+
+.box.box-supporters .box-supporters-street-smarts {
+  background: url("../img/street-smarts-logo.png") 0 0 no-repeat;
+  background-size: 245px 94px;
+  width: 245px;
+  height: 94px;
+}
+
+.box.box-supporters .box-supporters-511cc {
+  background: url("../img/511cc-logo.png") 0 0 no-repeat;
+  background-size: 148px 86px;
+  width: 148px;
+  height: 86px;
+}
+
+.box.box-supporters .box-supporters-ccta {
+  background: url("../img/ccta-logo.png") 0 0 no-repeat;
+  background-size: 205px 58px;
+  width: 205px;
+  height: 58px;
+}
+
+.box.box-supporters .box-supporters-baaqmd {
+  background: url("../img/baaqmd-logo.png") 0 0 no-repeat;
+  background-size: 152px 76px;
+  width: 152px;
+  height: 76px;
+}
+
+.box.box-video-full {
+  height: 550px;
+}
+
+.box.box-video-full img {
+  width: 100%;
+}
+
+.box.box-on-the-road-schedule {
+  height: auto;
+  margin-left: 40%;
+  width: 60%;
+}
+
+.box.box-on-the-road-schedule h1 {
+  text-align: center;
+}
+
+.box.box-on-the-road-schedule h3 {
+  text-align: center;
+}
+
+.box.box-on-the-road-schedule .box-text {
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  line-height: 20px;
+  padding-bottom: 40px;
+}
+
+.on-the-road-inquiry {
+  float: left;
+  width: 342px;
+  margin-top: 40px;
+  color: #ffffff;
+  line-height: 20px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+  padding-bottom: 150px;
+  background: url("../img/helmets-orange.png") center bottom no-repeat;
+}
+
+.on-the-road-inquiry a {
+  color: #FDBA30;
+}
+
+footer {
+  background-image: linear-gradient(-180deg, #454545 0%, #212121 100%);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  height: 106px;
+  margin-top: 25px;
+  position: relative;
+}
+
+footer .copyright {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 78px;
+}
+
+footer .footer-logo {
+  text-indent: -9999px;
+  display: block;
+}
+
+footer .footer-logo-511cc {
+  width: 97px;
+  height: 60px;
+  background: url("../img/footer-logo-511cc.png") 0 0 no-repeat;
+  background-size: 97px 60px;
+  position: absolute;
+  top: 6px;
+  right: 20px;
+}
+
+footer .footer-logo-street-smarts {
+  width: 151px;
+  height: 60px;
+  background: url("../img/footer-logo-street-smarts.png") 0 0 no-repeat;
+  background-size: 151px 60px;
+  margin-right: 40px;
+  position: absolute;
+  top: 6px;
+  left: 20px;
+}
+
+.btn {
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 18px;
+}
+
+.btn-green {
+  background: #557836;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  text-decoration: none;
+  background: #47652d;
+}
+
+.btn-right {
+  float: right;
+}
+
+@media only screen and (min-width: 964px) {
+  .wrapper {
+    width: 964px;
+    margin: 0 auto;
+  }
+
+  header .menu {
+    margin-top: 58px;
+    overflow: hidden;
+  }
+
+  header .menu .page-title {
+    display: none;
+  }
+
+  header .hamburger {
+    display: none;
+  }
+
+  header .cross {
+    display: none;
+  }
+
+  header .menu ul {
+    display: block;
+    float: right;
+    position: relative;
+    top: 0;
+    width: auto;
+  }
+
+  header .menu ul li {
+    display: inline-block;
+  }
+
+  header .menu ul li a {
+    display: inline-block;
+    border-top: 0;
+  }
+
+  .top-section-title {
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+
+  .content-section {
+    margin: 0;
+  }
+
+  .box {
+    height: 250px;
+  }
+
+  .box.box-home .box-text {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    width: 87%;
+  }
+
+  .box.half {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .box.half:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .box.thirds {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .box.thirds:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .box .box-image {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    margin: 0;
+  }
+
+  .box.box-home {
+    height: 220px;
+  }
+
+  .box.box-home .box-image {
+    top: 14px;
+    right: 14px;
+    left: auto;
+  }
+
+  .box.box-about .box-image {
+    background-size: 245px 94px;
+    height: 94px;
+    width: 245px;
+    top: 50px;
+    right: 30px;
+  }
+
+  .box.box-videos .box-image {
+    background-size: 167px 117px;
+    height: 117px;
+    width: 167px;
+    top: 38px;
+    right: 69px;
+  }
+
+  .box.box-on-the-road h2 {
+    text-align: right;
+  }
+
+  .box.box-on-the-road .box-image {
+    background-size: 253px 153px;
+    height: 153px;
+    width: 253px;
+    top: 16px;
+    right: 31px;
+  }
+
+  .box.box-contact {
+    height: 280px;
+  }
+
+  .box.box-history {
+    height: 280px;
+    padding-right: 230px;
+  }
+
+  .box.box-history .box-image {
+    right: 20px;
+    left: auto;
+    top: 60px;
+    margin: 0;
+  }
+
+  .box.box-supporters .logo {
+    float: left;
+    margin-top: 0;
+  }
+
+  .box.box-supporters .supporters-section {
+    float: right;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .box.box-supporters .box-supporters-street-smarts {
+    float: left;
+  }
+
+  .box.box-supporters .box-supporters-511cc {
+    float: right;
+    margin-right: 20px;
+  }
+
+  .box.box-supporters .box-supporters-ccta {
+    float: left;
+  }
+
+  .box.box-supporters .box-supporters-baaqmd {
+    float: right;
+    margin-right: 20px;
+    clear: both;
+  }
+
+  footer .footer-logo {
+    float: right;
+    margin-top: 10px;
+  }
+
+  footer .footer-logo-511cc {
+    width: 129px;
+    height: 80px;
+    background-size: 129px 80px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  footer .footer-logo-street-smarts {
+    width: 201px;
+    height: 80px;
+    background-size: 201px 80px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  footer .copyright {
+    float: left;
+    padding-top: 75px;
+    font-size: 12px;
+  }
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+  .box.box-about .box-image {
+    background-image: url("../img/street-smarts-logo@2x.png");
+  }
+
+  .box.box-videos .box-image {
+    background-image: url("../img/watermelon@2x.png");
+  }
+
+  .box.box-on-the-road .box-image {
+    background-image: url("../img/helmets@2x.png");
+  }
+
+  footer .footer-logo-511cc {
+    background-image: url("../img/footer-logo-511cc@2x.png");
+  }
+
+  footer .footer-logo-street-smarts {
+    background-image: url("../img/footer-logo-street-smarts@2x.png");
+  }
+
+  .box.box-supporters .box-supporters-511cc {
+    background-image: url("../img/511cc-logo.png");
+  }
+
+  .box.box-supporters .box-supporters-ccta {
+    background-image: url("../img/ccta-logo.png");
+  }
+
+  .box.box-supporters .box-supporters-baaqmd {
+    background-image: url("../img/baaqmd-logo.png");
+  }
+}
