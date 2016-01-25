@@ -18,12 +18,10 @@ header .logo {
   margin: 0;
   position: absolute;
   top: 0;
-  left: 60px;
-  width: 400px;
-  font-size: 70px;
+  left: 50px;
+  font-size: 25px;
+  line-height: 49px;
   font-family: Bitter-Bold;
-  letter-spacing: 2.91px;
-  line-height: 95px;
   text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
 }
 
@@ -33,6 +31,8 @@ header .cross {
   font-size: 33px;
   background: none;
   border: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 45px;
 }
 
 header .hamburger {
@@ -46,6 +46,7 @@ header .cross {
 
 header .menu {
   color: #ffffff;
+  background: #FDBA30;
   font-size: 16px;
   height: 52px;
   font-family: Bitter-Bold;
@@ -58,12 +59,13 @@ header .menu .page-title {
   font-size: 16px;
   float: right;
   line-height: 52px;
-  padding-right: 20px;
+  padding-right: 10px;
   text-transform: uppercase;
 }
 
 header .menu ul {
   display: none;
+  background: #a1a1a1;
   position: absolute;
   top: 52px;
   width: 100%;
@@ -71,16 +73,18 @@ header .menu ul {
   padding: 0;
   list-style-type: none;
   z-index: 1001;
+  border-bottom: 1px solid #393737;
 }
 
 header .menu ul li a {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
-  color: #ffffff;
+  color: #212121;
   padding: 0 20px;
   line-height: 52px;
   border-top: 1px solid #393737;
+  text-shadow: none;
 }
 
 header .menu ul li a.active {
@@ -99,7 +103,6 @@ header .menu ul li a.active:hover {
   position: relative;
   margin: 25px auto 0;
   text-align: center;
-  width: 660px;
 }
 
 .top-section h1 {
@@ -116,6 +119,7 @@ header .menu ul li a.active:hover {
   color: #FFFFFF;
   line-height: 20px;
   text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+  margin: 20px;
 }
 
 .content-section {
@@ -149,15 +153,6 @@ header .menu ul li a.active:hover {
 
 .box.box-home .box-text {
   margin: 10px 110px 0 0;
-}
-
-.box .box-text .half-column {
-  width: 49%;
-  float: left;
-}
-
-.box .box-text .half-column:nth-child(2n) {
-  margin-left: 1%;
 }
 
 .box .box-image {
@@ -254,14 +249,9 @@ header .menu ul li a.active:hover {
   width: 100%;
 }
 
-.box.box-on-the-road-schedule {
-  height: auto;
-  margin-left: 40%;
-  width: 60%;
-}
-
 .box.box-on-the-road-schedule h1 {
   text-align: center;
+  margin-top: 0;
 }
 
 .box.box-on-the-road-schedule h3 {
@@ -277,14 +267,14 @@ header .menu ul li a.active:hover {
 }
 
 .on-the-road-inquiry {
-  float: left;
-  width: 342px;
+  width: 100%;
   margin-top: 40px;
   color: #ffffff;
   line-height: 20px;
   text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
   padding-bottom: 150px;
   background: url("../img/helmets-orange.png") center bottom no-repeat;
+  background-size: 258px 111px;
 }
 
 .on-the-road-inquiry a {
@@ -304,6 +294,7 @@ footer .copyright {
   margin: 0 auto;
   text-align: center;
   padding-top: 78px;
+  font-size: 12px;
 }
 
 footer .footer-logo {
@@ -361,7 +352,17 @@ footer .footer-logo-street-smarts {
     margin: 0 auto;
   }
 
+  header .logo {
+    top: 0;
+    left: 60px;
+    width: 400px;
+    font-size: 70px;
+    letter-spacing: 2.91px;
+    line-height: 95px;
+  }
+
   header .menu {
+    background: none;
     margin-top: 30px;
     overflow: hidden;
   }
@@ -380,6 +381,8 @@ footer .footer-logo-street-smarts {
 
   header .menu ul {
     display: block;
+    background: none;
+    border-bottom: 0;
     float: right;
     position: relative;
     top: 0;
@@ -393,6 +396,11 @@ footer .footer-logo-street-smarts {
   header .menu ul li a {
     display: inline-block;
     border-top: 0;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+  }
+
+  .top-section {
+    width: 660px;
   }
 
   .top-section-title {
@@ -438,6 +446,15 @@ footer .footer-logo-street-smarts {
     margin-right: 0;
   }
 
+  .box .box-text .half-column {
+    width: 49%;
+    float: left;
+  }
+
+  .box .box-text .half-column:nth-child(2n) {
+    margin-left: 1%;
+  }
+
   .box .box-image {
     position: absolute;
     top: 14px;
@@ -471,6 +488,12 @@ footer .footer-logo-street-smarts {
     right: 69px;
   }
 
+  .box.box-on-the-road-schedule {
+    float: right;
+    height: auto;
+    width: 60%;
+  }
+
   .box.box-on-the-road h2 {
     text-align: right;
   }
@@ -481,6 +504,10 @@ footer .footer-logo-street-smarts {
     width: 253px;
     top: 16px;
     right: 31px;
+  }
+
+  .on-the-road-inquiry {
+    width: 342px;
   }
 
   .box.box-contact {
@@ -561,7 +588,6 @@ footer .footer-logo-street-smarts {
   footer .copyright {
     float: left;
     padding-top: 75px;
-    font-size: 12px;
   }
 }
 
@@ -581,12 +607,12 @@ footer .footer-logo-street-smarts {
     background-image: url("../img/helmets@2x.png");
   }
 
-  footer .footer-logo-511cc {
-    background-image: url("../img/footer-logo-511cc@2x.png");
+  .box.box-history .box-image {
+    background-image: url("../img/history@2x.png");
   }
 
-  footer .footer-logo-street-smarts {
-    background-image: url("../img/footer-logo-street-smarts@2x.png");
+  .box.box-supporters .box-supporters-street-smarts {
+    background-image: url("../img/street-smarts-logo@2x.png");
   }
 
   .box.box-supporters .box-supporters-511cc {
@@ -599,5 +625,17 @@ footer .footer-logo-street-smarts {
 
   .box.box-supporters .box-supporters-baaqmd {
     background-image: url("../img/baaqmd-logo@2x.png");
+  }
+
+  .on-the-road-inquiry {
+    background-image: url("../img/helmets-orange@2x.png");
+  }
+
+  footer .footer-logo-511cc {
+    background-image: url("../img/footer-logo-511cc@2x.png");
+  }
+
+  footer .footer-logo-street-smarts {
+    background-image: url("../img/footer-logo-street-smarts@2x.png");
   }
 }
