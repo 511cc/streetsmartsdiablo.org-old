@@ -1,0 +1,778 @@
+body {
+  background: #B2D234;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #557836;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: #4A4A4A;
+}
+
+header .logo {
+  margin: 0;
+  position: absolute;
+  top: 4px;
+  left: 50px;
+  text-indent: -9999px;
+  background: url("../img/mobile-logo.png") 0 0 no-repeat;
+  background-size: 153px 42px;
+  width: 153px;
+}
+
+header .header-image {
+  position: absolute;
+  top: 4px;
+  left: 50px;
+}
+
+header .hamburger,
+header .cross {
+  color: #ffffff;
+  font-size: 33px;
+  background: none;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+}
+
+header .hamburger {
+  padding: 0 10px;
+}
+
+header .cross {
+  display: none;
+  padding: 3px 15px;
+}
+
+header .menu {
+  color: #ffffff;
+  background: #4A4A4A;
+  font-size: 16px;
+  height: 52px;
+  font-weight: 800;
+  line-height: 21px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+}
+
+header .menu .page-title {
+  font-size: 16px;
+  float: right;
+  line-height: 52px;
+  padding-right: 10px;
+  text-transform: lowercase;
+  letter-spacing: 0.74px;
+}
+
+header .menu ul {
+  display: none;
+  background: #686767;
+  position: absolute;
+  top: 52px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  z-index: 1001;
+  border-bottom: 1px solid #393737;
+}
+
+header .menu ul li a {
+  display: block;
+  text-transform: lowercase;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 0 20px;
+  line-height: 52px;
+  text-shadow: none;
+}
+
+header .menu ul li a.active {
+  color: #B2D234;
+}
+
+header .menu ul li a:hover,
+header .menu ul li a.active:hover {
+  background: #B2D234;
+  color: #212121;
+  text-decoration: none;
+}
+
+.top-section {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.top-section .top-section-text {
+  font-size: 14px;
+  color: #191919;
+  line-height: 16px;
+  margin: 20px;
+}
+
+.top-section .top-section-text p {
+  padding-top: 20px;
+}
+
+.content-section {
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.box {
+  color: #212121;
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  min-height: 140px;
+}
+
+.box h2 {
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.box .box-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.box.box-home .box-text {
+  margin: 10px 110px 0 0;
+}
+
+.box .box-image {
+  margin: 20px auto;
+}
+
+.box.box-home .box-image {
+  margin: 0;
+  float: right;
+}
+
+.box.box-about .box-image {
+  background: url("../img/street-smarts-logo.png") 0 0 no-repeat;
+  background-size: 100px 38px;
+  height: 38px;
+  width: 100px;
+}
+
+.box.box-videos .box-image {
+  background: url("../img/videos.jpg") 0 0 no-repeat;
+  background-size: 166px 104px;
+  height: 104px;
+  width: 166px;
+  float: none;
+  margin: 10px auto;
+}
+
+.box.box-videos .box-text {
+  margin: 10px 0 0 0;
+}
+
+.box.box-at-your-school .box-image {
+  background: url("../img/bmx.png") 0 0 no-repeat;
+  background-size: 250px 168px;
+  height: 168px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.box.box-home.box-at-your-school .box-text {
+  width: 100%;
+}
+
+.box.box-contact .btn-email {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box.box-history .box-text {
+  line-height: 22px;
+}
+
+.box.box-history .box-image {
+  background: url("../img/history.png") 0 0 no-repeat;
+  background-size: 116px 155px;
+  height: 155px;
+  width: 116px;
+  margin-bottom: 0;
+}
+
+.box.box-supporters .logo {
+  text-indent: -9999px;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+.box.box-supporters .box-text {
+  line-height: 22px;
+}
+
+.box.box-supporters .box-supporters-street-smarts {
+  background: url("../img/street-smarts-logo.png") 0 0 no-repeat;
+  background-size: 130px 50px;
+  width: 130px;
+  height: 50px;
+}
+
+.box.box-supporters .box-supporters-511cc {
+  background: url("../img/511cc-logo.png") 0 0 no-repeat;
+  background-size: 83px 50px;
+  width: 83px;
+  height: 50px;
+}
+
+.box.box-supporters .box-supporters-ccta {
+  background: url("../img/ccta-logo.png") 0 0 no-repeat;
+  background-size: 176px 50px;
+  width: 176px;
+  height: 50px;
+}
+
+.box.box-supporters .box-supporters-baaqmd {
+  background: url("../img/baaqmd-logo.png") 0 0 no-repeat;
+  background-size: 100px 50px;
+  width: 100px;
+  height: 50px;
+}
+
+.box.box-video-player h2 {
+  margin-bottom: 10px;
+}
+
+.box.box-video .video {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box.box-video .video-title {
+  text-align: center;
+}
+
+.box.box-video .video img {
+  height: auto;
+  width: 100%;
+}
+
+.box.box-video-sidebar .video {
+  margin-bottom: 25px;
+}
+
+.box.box-video-sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.box.box-video-sidebar .video img {
+  width: 100%;
+  height: auto;
+}
+
+.box.box-video-sidebar .video .video-title {
+  font-size: 12px;
+  color: #191919;
+  line-height: 15px;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.box.box-at-your-school-schedule h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+}
+
+.box.box-at-your-school-schedule h3 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 0;
+}
+
+.box.box-at-your-school-schedule .box-text {
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  line-height: 20px;
+  padding-bottom: 40px;
+}
+
+.at-your-school-inquiry {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 220px;
+  background: url("../img/inquiry.png") center bottom no-repeat;
+  background-size: 317px 195px;
+  font-family: OpenSans-Bold;
+  font-size: 12px;
+  color: #191919;
+  line-height: 15px;
+}
+
+.at-your-school-inquiry a {
+  color: #191919;
+}
+
+footer {
+  background-image: linear-gradient(-180deg, #454545 0%, #212121 100%);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  height: 106px;
+  margin-top: 25px;
+  position: relative;
+}
+
+footer .copyright {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 78px;
+  font-size: 12px;
+}
+
+footer .footer-logo {
+  text-indent: -9999px;
+  display: block;
+}
+
+footer .footer-logo-511cc {
+  width: 97px;
+  height: 60px;
+  background: url("../img/footer-logo-511cc.png") 0 0 no-repeat;
+  background-size: 97px 60px;
+  position: absolute;
+  top: 6px;
+  right: 20px;
+}
+
+footer .footer-logo-street-smarts {
+  width: 151px;
+  height: 60px;
+  background: url("../img/footer-logo-street-smarts.png") 0 0 no-repeat;
+  background-size: 151px 60px;
+  margin-right: 40px;
+  position: absolute;
+  top: 6px;
+  left: 20px;
+}
+
+.btn {
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 18px;
+}
+
+.btn-grey {
+  background: #4A4A4A;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  color: #ffffff;
+}
+
+.btn-grey:hover {
+  text-decoration: none;
+  background: #383535;
+}
+
+.btn-right {
+  float: right;
+}
+
+@media only screen and (min-width: 964px) {
+  .wrapper {
+    width: 964px;
+    margin: 0 auto;
+  }
+
+  header .logo {
+    top: 10px;
+    left: auto;
+    width: 133px;
+    height: 99px;
+    margin-left: 100px;
+    background: url("../img/bike-smart-logo.png") 0 0 no-repeat;
+    background-size: 133px 99px;
+  }
+
+  header .header-image {
+    top: 10px;
+    left: auto;
+    width: 102px;
+    height: 196px;
+    background: url("../img/header-image.png") 0 0 no-repeat;
+    background-size: 102px 196px;
+  }
+
+  header .menu {
+    background: none;
+    padding: 60px 0 10px;
+    overflow: hidden;
+  }
+
+  header .menu .page-title {
+    display: none;
+  }
+
+  header .hamburger {
+    display: none;
+  }
+
+  header .cross {
+    display: none;
+  }
+
+  header .menu ul {
+    display: block;
+    background: none;
+    border-bottom: 0;
+    float: right;
+    position: relative;
+    top: 0;
+    width: auto;
+  }
+
+  header .menu ul li {
+    display: inline-block;
+  }
+
+  header .menu ul li a {
+    display: inline-block;
+    border-top: 0;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+    letter-spacing: 0.74px;
+  }
+
+  .top-section {
+    width: 660px;
+  }
+
+  .top-section-title {
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+
+  .content-section {
+    margin-top: 0;
+  }
+
+  .content-section:first-child {
+    margin-top: 80px;
+  }
+
+  .box {
+    height: 250px;
+  }
+
+  .box.box-home .box-text {
+    position: absolute;
+    bottom: 15px;
+    margin: 0 auto;
+    width: 87%;
+  }
+
+  .box.half {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .box.half:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .box.thirds {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .box.thirds:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .box .box-image {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    margin: 0;
+  }
+
+  .box.box-home {
+    height: 220px;
+  }
+
+  .box.box-home .box-image {
+    top: 14px;
+    right: 14px;
+    left: auto;
+  }
+
+  .box.box-about .box-image {
+    background-size: 245px 94px;
+    height: 94px;
+    width: 245px;
+    top: 50px;
+    right: 30px;
+  }
+
+  .box.box-videos .box-image {
+    background-size: 167px 117px;
+    height: 117px;
+    width: 167px;
+    top: 38px;
+    right: 69px;
+    margin: 10px 0;
+  }
+
+  .box.box-video .video {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .box.box-video .video-title {
+    width: 184px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .box.box-video .video img {
+    height: 135px;
+    width: 180px;
+  }
+
+  .box.box-video-player {
+    width: 665px;
+    height: 445px;
+    float: left;
+    padding: 25px;
+  }
+
+  .box.box-video-sidebar {
+    width: 235px;
+    float: right;
+    height: 446px;
+    padding: 25px;
+  }
+
+  .box.box-video-sidebar .video img {
+    width: 185px;
+  }
+
+  .box.box-at-your-school-schedule {
+    float: right;
+    height: auto;
+    width: 60%;
+  }
+
+  .box.box-at-your-school-schedule table {
+    margin: 0 auto;
+  }
+
+  .box.box-at-your-school-schedule table td {
+    padding: 3px 5px;
+  }
+
+  .box.box-at-your-school h2 {
+    text-align: right;
+  }
+
+  .box.box-at-your-school .box-image {
+    background-size: 253px 153px;
+    height: 153px;
+    width: 253px;
+    top: 16px;
+    right: 31px;
+  }
+
+  .box.box-home.box-at-your-school .box-text {
+    width: 70%;
+  }
+
+  .at-your-school-inquiry {
+    width: 342px;
+  }
+
+  .box.box-contact {
+    height: 300px;
+  }
+
+  .box.box-contact .btn-email {
+    float: right;
+    margin-top: -55px;
+  }
+
+  .box.box-history {
+    height: 300px;
+    padding-right: 160px;
+  }
+
+  .box.box-history .box-image {
+    right: 30px;
+    left: auto;
+    top: 30px;
+    margin: 0;
+  }
+
+  .box.box-supporters {
+    height: 190px;
+  }
+
+  .box.box-supporters .logo {
+    float: left;
+    margin-top: 0;
+  }
+
+  .box.box-supporters .supporters-section {
+    float: right;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .box.box-supporters .box-supporters-street-smarts {
+    float: left;
+    margin-left: 20px;
+  }
+
+  .box.box-supporters .box-supporters-511cc {
+    float: right;
+    margin-right: 140px;
+  }
+
+  .box.box-supporters .box-supporters-ccta {
+    float: left;
+  }
+
+  .box.box-supporters .box-supporters-baaqmd {
+    float: right;
+    margin-right: 130px;
+    clear: both;
+  }
+
+  footer .footer-logo {
+    float: right;
+    margin-top: 10px;
+  }
+
+  footer .footer-logo-511cc {
+    width: 129px;
+    height: 80px;
+    background-size: 129px 80px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  footer .footer-logo-street-smarts {
+    width: 201px;
+    height: 80px;
+    background-size: 201px 80px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  footer .copyright {
+    float: left;
+    padding-top: 75px;
+  }
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+  header .logo {
+    background-image: url("../img/mobile-logo@2x.png");
+  }
+
+  @media only screen and (min-width: 964px) {
+    header .logo {
+      background-image: url("../img/bike-smart-logo@2x.png");
+    }
+
+    header .header-image {
+      background-image: url("../img/header-image@2x.png");
+    }
+  }
+
+  .box.box-about .box-image {
+    background-image: url("../img/street-smarts-logo@2x.png");
+  }
+
+  .box.box-videos .box-image {
+    background-image: url("../img/videos@2x.jpg");
+  }
+
+  .box.box-at-your-school .box-image {
+    background-image: url("../img/bmx@2x.png");
+  }
+
+  .box.box-history .box-image {
+    background-image: url("../img/history@2x.png");
+  }
+
+  .box.box-supporters .box-supporters-street-smarts {
+    background-image: url("../img/street-smarts-logo@2x.png");
+  }
+
+  .box.box-supporters .box-supporters-511cc {
+    background-image: url("../img/511cc-logo@2x.png");
+  }
+
+  .box.box-supporters .box-supporters-ccta {
+    background-image: url("../img/ccta-logo@2x.png");
+  }
+
+  .box.box-supporters .box-supporters-baaqmd {
+    background-image: url("../img/baaqmd-logo@2x.png");
+  }
+
+  .at-your-school-inquiry {
+    background-image: url("../img/inquiry@2x.png");
+  }
+
+  footer .footer-logo-511cc {
+    background-image: url("../img/footer-logo-511cc@2x.png");
+  }
+
+  footer .footer-logo-street-smarts {
+    background-image: url("../img/footer-logo-street-smarts@2x.png");
+  }
+}
