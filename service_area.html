@@ -87,12 +87,18 @@
           var zoom = (window.innerWidth < 964) ? 9 : 10;
 
           var map = L.mapbox.map('schools-map', 'mapbox.streets')
-            .setView([37.9064, -121.89], zoom);
+            .setView([37.9964, -121.89], zoom);
 
-          var featureLayer = L.mapbox.featureLayer(null, {
+          L.mapbox.featureLayer(null, {
               style: function(feature) { return feature.properties; }
             })
-            .loadURL('data/service_area.geojson')
+            .loadURL('data/central_county.geojson')
+            .addTo(map);
+
+          L.mapbox.featureLayer(null, {
+              style: function(feature) { return feature.properties; }
+            })
+            .loadURL('data/east_county.geojson')
             .addTo(map);
         </script>
 
