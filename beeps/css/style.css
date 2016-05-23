@@ -18,6 +18,40 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1.5px;
 }
 
+video.bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
 header .logo {
   background: url("../img/beeps-logo.png") 0 0 no-repeat;
   background-size: 135px 45px;
@@ -32,21 +66,17 @@ header .logo {
 
 header .hamburger,
 header .cross {
-  color: #2061AC;
+  color: #ffffff;
   font-size: 33px;
   background: none;
   border: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-}
-
-header .hamburger {
-  padding: 0 10px;
+  padding: 5px 15px;
+  height: 52px;
+  float: left;
 }
 
 header .cross {
   display: none;
-  padding: 3px 15px;
 }
 
 header .menu {
@@ -87,7 +117,7 @@ header .menu ul li a {
   text-transform: uppercase;
   font-weight: bold;
   color: #212121;
-  padding: 0 20px;
+  padding: 0 16px;
   line-height: 52px;
   border-top: 1px solid #393737;
 }
@@ -103,22 +133,21 @@ header .menu ul li a.active:hover {
 
 .top-section {
   overflow: hidden;
+  position: relative;
 }
 
 .top-section h2 {
   font-size: 22px;
   margin: 20px 20px 0 20px;
   text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 .top-section-home {
   background: url("../img/beeps.png") center bottom -25px no-repeat;
   background-size: 275px 275px;
   padding-bottom: 225px;
-}
-
-.top-section .top-section-text {
-  margin: 20px;
 }
 
 .content-section {
@@ -210,9 +239,9 @@ header .menu ul li a.active:hover {
 
 .box.box-program .box-image {
   background: url("../img/beeps.png") 0 0 no-repeat;
-  background-size: 150px 150px;
-  height: 150px;
-  width: 150px;
+  background-size: 200px 200px;
+  height: 200px;
+  width: 200px;
   bottom: 0;
   top: auto;
   margin-bottom: 0;
@@ -220,7 +249,6 @@ header .menu ul li a.active:hover {
 
 .box.box-supporters {
   font-size: 14px;
-  line-height: 22px;
 }
 
 .box.box-supporters .logo {
@@ -262,54 +290,17 @@ header .menu ul li a.active:hover {
   padding-top: 5px;
 }
 
-.box.box-video-player h2 {
-  margin-bottom: 10px;
-}
-
-.box.box-video .video {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.box.box-video .video-title {
-  text-align: center;
-}
-
-.box.box-video .video img {
-  height: auto;
-  width: 100%;
-}
-
-.box.box-video-sidebar h2 {
-  margin-bottom: 10px;
-}
-
-.box.box-video-sidebar .video img {
-  width: 100%;
-  height: auto;
-}
-
-.video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-}
-
-.box.box-puzzles .box-image {
-  display: none;
-}
 
 .box.box-puzzles .coloring-book {
+  width: 100%;
+  height: auto;
+}
+.box.box-reading .hydrogen-cars {
+  width: 100%;
+  height: auto;
+}
+
+.box.box-reading .hydrogen-cars .hydrogen-cars-book {
   width: 100%;
   height: auto;
 }
@@ -342,17 +333,18 @@ header .menu ul li a.active:hover {
 footer {
   background-image: linear-gradient(-180deg, #454545 0%, #212121 100%);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
-  height: 106px;
+  overflow: hidden;
   margin-top: 25px;
   position: relative;
 }
 
 footer .copyright {
   color: #ffffff;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 78px;
-  font-size: 12px;
+  padding-top: 20px;
+}
+
+footer .copyright a {
+  color: #ffffff;
 }
 
 footer .footer-logo {
@@ -381,6 +373,27 @@ footer .footer-logo-street-smarts {
   left: 20px;
 }
 
+footer .footer-left {
+  padding: 90px 20px 20px 20px;
+}
+
+footer .social-link {
+  font-size: 28px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  color: #4695D2;
+  background: #ffffff;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+}
+
+footer .social-link:hover {
+  background: #4695D2;
+  color: #ffffff;
+}
+
 .btn {
   width: 180px;
   display: inline-block;
@@ -405,7 +418,7 @@ footer .footer-logo-street-smarts {
 
 @media only screen and (min-width: 350px) {
   .school-assemblies-background {
-    top: 750px;
+    top: 712px;
   }
 }
 
@@ -416,6 +429,9 @@ footer .footer-logo-street-smarts {
 }
 
 @media only screen and (min-width: 964px) {
+  video.bgvid {
+    display: block;
+  }
   .wrapper {
     width: 964px;
     margin: 0 auto;
@@ -429,7 +445,7 @@ footer .footer-logo-street-smarts {
     left: 0;
     height: 305px;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
 
   header .logo {
@@ -443,7 +459,7 @@ footer .footer-logo-street-smarts {
 
   header .menu {
     background: none;
-    margin-top: 90px;
+    margin-top: 30px;
     overflow: hidden;
   }
 
@@ -481,7 +497,7 @@ footer .footer-logo-street-smarts {
   }
 
   .top-section {
-    padding-top: 25px;
+    padding-top: 85px;
   }
 
   .top-section h2 {
@@ -495,7 +511,7 @@ footer .footer-logo-street-smarts {
   .top-section-home {
     background-position: left 20px top;
     padding-bottom: 0;
-    height: 253px;
+    height: 165px;
   }
 
   .top-section .top-section-text {
@@ -592,12 +608,24 @@ footer .footer-logo-street-smarts {
     height: 325px;
   }
 
+  .box.box-contact .btn-email {
+    margin-top: 25px;
+  }
+
   .box.box-history {
     height: 325px;
   }
 
   .box.box-program {
     height: 325px;
+  }
+
+  .box.box-program .box-image {
+    margin-left: 30px;
+  }
+
+  .box.box-supporters {
+    height: 220px;
   }
 
   .box.box-supporters .logo {
@@ -609,6 +637,7 @@ footer .footer-logo-street-smarts {
     float: right;
     width: 50%;
     margin-left: 20px;
+    margin-top: -20px;
   }
 
   .box.box-supporters .box-supporters-street-smarts {
@@ -622,81 +651,44 @@ footer .footer-logo-street-smarts {
 
   .box.box-supporters .box-supporters-ccta {
     float: left;
+    margin-bottom: 0;
   }
 
   .box.box-supporters .box-supporters-baaqmd {
     float: right;
     margin-right: 20px;
+    margin-bottom: 0;
     clear: both;
   }
 
-  .box.box-video {
-    height: 430px;
-  }
 
   .box.box-puzzles {
-    height: 430px;
+    height: 395px;
+  }
+  .box.box-reading {
+    height: 395px;
+  }
+
+  .box.box-puzzles .box-text {
+    float: left;
   }
 
   .box.box-puzzles .coloring-book {
     float: left;
-    width: 184px;
-    height: 234px;
-    margin-left: 36px;
+    width: 212px;
+    height: 270px;
+    margin-left: 115px;
+    margin-top: 15px;
   }
 
-  .box.box-puzzles .box-image {
-    right: 40px;
-    left: auto;
-    top: 93px;
-    margin: 0;
-    display: block;
-    background: url("../img/coloring-book-sample.png") 0 0 no-repeat;
-    background-size: 93px 250px;
-    width: 93px;
-    height: 250px;
-  }
-
-  .box.box-video .video {
-    width: 50%;
+  .box.box-reading .hydrogen-cars {
     float: left;
-    text-align: center;
-    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-top: 15px;
   }
-
-  .box.box-video .video-title {
-    width: 184px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-
-  .box.box-video .video img {
-    height: 135px;
-    width: 180px;
-  }
-
-  .box.box-video-player {
-    width: 700px;
-    height: 445px;
-    float: left;
-    padding: 25px;
-  }
-
-  .box.box-video-sidebar {
-    width: 235px;
-    float: right;
-    height: 445px;
-    padding: 25px;
-  }
-
-  .box.box-video-sidebar .video {
-    margin-bottom: 25px;
-  }
-
-  .box.box-video-sidebar .video img {
-    width: 185px;
-    height: 123px;
+  .box.box-reading .hydrogen-cars .hydrogen-cars-book {
+    width: 250px;
+    height: 270px;
   }
 
   .box-image {
@@ -712,13 +704,8 @@ footer .footer-logo-street-smarts {
     float: right;
   }
 
-  .box.box-tour-schedule .box-text {
-    padding-bottom: 20px;
-  }
-
   footer .footer-logo {
     float: right;
-    margin-top: 10px;
   }
 
   footer .footer-logo-511cc {
@@ -740,8 +727,20 @@ footer .footer-logo-street-smarts {
   }
 
   footer .copyright {
+    padding-top: 32px;
+    font-size: 12px;
+  }
+
+  footer .footer-left {
     float: left;
-    padding-top: 75px;
+    width: 45%;
+    padding: 10px;
+  }
+
+  footer .footer-right {
+    float: right;
+    width: 45%;
+    padding: 10px;
   }
 }
 
@@ -775,10 +774,6 @@ footer .footer-logo-street-smarts {
 
   .box.box-school-assemblies .box-image {
     background-image: url("../img/school-assemblies@2x.png");
-  }
-
-  .box.box-puzzles .box-image {
-    background-image: url("../img/coloring-book-sample@2x.png");
   }
 
   .box.box-supporters .box-supporters-street-smarts {

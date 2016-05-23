@@ -30,15 +30,11 @@ header .cross {
   font-size: 33px;
   background: none;
   border: 0;
-}
-
-header .hamburger {
-  padding: 0 10px;
+  padding: 5px 15px;
 }
 
 header .cross {
   display: none;
-  padding: 3px 15px;
 }
 
 header .menu {
@@ -195,12 +191,15 @@ header .menu ul li a.active:hover {
   width: 100px;
 }
 
-.box.box-schools-map {
-  height: 385px;
-}
-
 .box.box-schools-map .schools-map {
   height: 357px;
+}
+
+.box.box-schools-map .schools-text {
+  color: #fff;
+  margin-left: 20px;
+  line-height: 25px;
+  margin-top: 25px;
 }
 
 .box.box-contact .btn-email {
@@ -210,13 +209,13 @@ header .menu ul li a.active:hover {
   margin-bottom: 10px;
 }
 
-.box.box-supporters .logo {
+.box.box-partners .logo {
   text-indent: -9999px;
   margin: 0 auto 20px;
   display: block;
 }
 
-.box.box-supporters .box-supporters-511cc {
+.box.box-partners .box-partners-511cc {
   background: url("../img/511cc-logo.png") 0 0 no-repeat;
   background-size: 148px 86px;
   width: 148px;
@@ -224,21 +223,21 @@ header .menu ul li a.active:hover {
   margin-top: 20px;
 }
 
-.box.box-supporters .box-supporters-ccta {
+.box.box-partners .box-partners-ccta {
   background: url("../img/ccta-logo.png") 0 0 no-repeat;
   background-size: 205px 58px;
   width: 205px;
   height: 58px;
 }
 
-.box.box-supporters .box-supporters-baaqmd {
+.box.box-partners .box-partners-baaqmd {
   background: url("../img/baaqmd-logo.png") 0 0 no-repeat;
   background-size: 152px 76px;
   width: 152px;
   height: 76px;
 }
 
-.box.box-supporters .box-text {
+.box.box-partners .box-text {
   clear: both;
   padding-top: 5px;
 }
@@ -274,16 +273,14 @@ header .menu ul li a.active:hover {
 footer {
   background-image: linear-gradient(-180deg, #454545 0%, #212121 100%);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
-  height: 106px;
+  overflow: hidden;
   margin-top: 25px;
   position: relative;
 }
 
 footer .copyright {
   color: #ffffff;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 78px;
+  padding-top: 20px;
 }
 
 footer .footer-logo {
@@ -310,6 +307,26 @@ footer .footer-logo-street-smarts {
   position: absolute;
   top: 6px;
   left: 20px;
+}
+
+footer .footer-left {
+  padding: 90px 20px 20px 20px;
+}
+
+footer .social-link {
+  font-size: 28px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+}
+
+footer .social-link:hover {
+  background: #4695D2;
+  color: #ffffff;
 }
 
 .btn {
@@ -493,12 +510,15 @@ footer .footer-logo-street-smarts {
     background-size: 176px 106px;
     height: 106px;
     width: 176px;
+    margin-top: 20px;
+    left: 68px;
   }
 
   .box.box-programs .box-image {
     background-size: 140px 128px;
     height: 128px;
     width: 140px;
+    margin-right: 20px;
   }
 
   .box.box-service-area .box-image {
@@ -508,30 +528,47 @@ footer .footer-logo-street-smarts {
     top: 40px;
   }
 
-  .box.box-contact {
-    height: 280px;
+  .box.box-schools-map {
+    height: 385px;
   }
 
-  .box.box-supporters {
-    height: 280px;
-  }
-
-  .box.box-supporters .logo {
+  .box.box-schools-map .schools-map {
+    width: 650px;
     float: left;
   }
 
-  .box.box-supporters .box-supporters-511cc {
-    margin-top: 20px;
+  .box.box-schools-map .schools-text {
+    margin-top: 0;
+    width: 263px;
+    float: left;
   }
 
-  .box.box-supporters .box-supporters-ccta {
-    margin-left: 20px;
+  .box.box-contact {
+    height: 285px;
+  }
+
+  .box.box-partners {
+    height: 285px;
+  }
+
+  .box.box-partners .logo {
+    float: left;
+  }
+
+  .box.box-partners .box-partners-511cc {
+    margin-top: 45px;
+    margin-left: 40px;
+  }
+
+  .box.box-partners .box-partners-ccta {
+    margin-left: 10px;
     margin-bottom: 20px;
   }
 
-  .box.box-supporters .box-supporters-baaqmd {
-    margin-left: 60px;
+  .box.box-partners .box-partners-baaqmd {
+    margin-left: 50px;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .box.box-k-2 .box-text,
@@ -556,7 +593,6 @@ footer .footer-logo-street-smarts {
 
   footer .footer-logo {
     float: right;
-    margin-top: 10px;
   }
 
   footer .footer-logo-511cc {
@@ -578,9 +614,20 @@ footer .footer-logo-street-smarts {
   }
 
   footer .copyright {
-    float: left;
-    padding-top: 75px;
+    padding-top: 32px;
     font-size: 12px;
+  }
+
+  footer .footer-left {
+    float: left;
+    width: 45%;
+    padding: 10px;
+  }
+
+  footer .footer-right {
+    float: right;
+    width: 45%;
+    padding: 10px;
   }
 }
 
@@ -623,15 +670,15 @@ footer .footer-logo-street-smarts {
     background-image: url("../img/footer-logo-street-smarts@2x.png");
   }
 
-  .box.box-supporters .box-supporters-511cc {
+  .box.box-partners .box-partners-511cc {
     background-image: url("../img/511cc-logo@2x.png");
   }
 
-  .box.box-supporters .box-supporters-ccta {
+  .box.box-partners .box-partners-ccta {
     background-image: url("../img/ccta-logo@2x.png");
   }
 
-  .box.box-supporters .box-supporters-baaqmd {
+  .box.box-partners .box-partners-baaqmd {
     background-image: url("../img/baaqmd-logo@2x.png");
   }
 

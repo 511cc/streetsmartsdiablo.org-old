@@ -24,6 +24,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 
         <link rel="stylesheet" href="css/normalize.css">
         <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
@@ -43,8 +45,8 @@
           </div>
           <div class="menu">
             <div class="wrapper">
-              <button class="hamburger">&#9776;</button>
-              <button class="cross">&times;</button>
+              <button class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+              <button class="cross"><i class="fa fa-times" aria-hidden="true"></i></button>
               <div class="menu-title">Diablo Region</div>
               <div class="page-title">Service Area</div>
               <ul>
@@ -65,15 +67,25 @@
           <div class="content-section">
             <div class="box dark box-schools-map">
               <div id="schools-map" class="schools-map"></div>
+              <div class="schools-text">
+                <b>Communities served:</b> Antioch, Bay Point, Brentwood, Byron, Clayton, Concord, Discovery Bay, Knightsen, Martinez, Oakley, Pacheco, Pittsburg, Pleasant Hill, and Walnut Creek.<br><br>
+                <b>Oversight Committees:</b> <br>
+                <a href="http://transpac.us/">TRANSPAC</a> and <a href="http://transplan.us/">TRANSPLAN</a><br>
+              </div>
             </div>
           </div>
         </div>
 
         <footer>
           <div class="wrapper">
-            <div class="copyright">&copy; 2016 Street Smarts Diablo</div>
-            <a href="http://511contracosta.org" class="footer-logo footer-logo-511cc">511 Contra Costa</a>
-            <a href="/" class="footer-logo footer-logo-street-smarts">Street Smarts Diablo Region</a>
+            <div class="footer-left">
+              <a href="https://twitter.com/StSmartsDiablo" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <div class="copyright">&copy; 2016 Street Smarts Diablo</div>
+            </div>
+            <div class="footer-right">
+              <a href="http://511contracosta.org" class="footer-logo footer-logo-511cc">511 Contra Costa</a>
+              <a href="/" class="footer-logo footer-logo-street-smarts">Street Smarts Diablo Region</a>
+            </div>
           </div>
         </footer>
 
