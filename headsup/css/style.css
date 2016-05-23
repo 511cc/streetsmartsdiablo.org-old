@@ -276,6 +276,23 @@ header .menu ul li a.active:hover {
   color: #FDBA30;
 }
 
+.box.box-bike-to-school-day {
+  height: auto;
+  overflow: hidden;
+}
+
+.gallery-item {
+  float: left;
+  margin: 20px 20px 0 0;
+  text-align: center;
+  width: 150px;
+  height: 210px;
+}
+
+.gallery-item dd {
+  margin: 0;
+}
+
 footer {
   background-image: linear-gradient(-180deg, #454545 0%, #212121 100%);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
@@ -398,7 +415,6 @@ footer .social-link:hover {
   header .menu {
     background: none;
     padding-top: 30px;
-    padding-left: 30px;
     overflow: hidden;
   }
 
@@ -430,6 +446,7 @@ footer .social-link:hover {
   header .menu ul li a {
     display: inline-block;
     border-top: 0;
+    padding: 0 14px;
   }
 
   .top-section {
@@ -598,6 +615,14 @@ footer .social-link:hover {
     margin-right: 20px;
     margin-bottom: 0;
     clear: both;
+  }
+
+  .box.box-bike-to-school {
+    height: 360px;
+  }
+
+  .box.box-checklist {
+    height: 360px;
   }
 
   footer .footer-logo {
