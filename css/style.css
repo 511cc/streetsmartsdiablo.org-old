@@ -202,6 +202,16 @@ header .menu ul li a.active:hover {
   margin-top: 25px;
 }
 
+.box.box-quote {
+  line-height: 1.6;
+  height: auto;
+}
+
+.quote-attribution {
+  font-weight: bold;
+  padding-left: 80px;
+}
+
 .box.box-contact .btn-email {
   float: none;
   margin: 0 auto;
@@ -268,6 +278,14 @@ header .menu ul li a.active:hover {
   background-size: 156px 203px;
   height: 203px;
   width: 156px;
+}
+
+.box.box-other-activities .box-text {
+  line-height: 1.6;
+}
+
+.box.box-other-activities .box-video {
+  margin-top: 1em;
 }
 
 footer {
@@ -543,6 +561,10 @@ footer .social-link:hover {
     float: left;
   }
 
+  .box.box-quote {
+    padding: 20px 160px 40px;
+  }
+
   .box.box-contact {
     height: 285px;
   }
@@ -589,6 +611,21 @@ footer .social-link:hover {
   .box.box-9-12 .box-text,
   .box.box-9-12 h2 {
     padding-left: 175px;
+  }
+
+  .box.box-other-activities {
+    overflow: hidden;
+    height: auto;
+  }
+
+  .box.box-other-activities .box-text {
+    width: 48%;
+    float: left;
+  }
+
+  .box.box-other-activities .box-video {
+    width: 48%;
+    float: right;
   }
 
   footer .footer-logo {
