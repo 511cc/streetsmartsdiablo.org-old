@@ -379,19 +379,23 @@ footer .footer-left {
 
 footer .social-link {
   font-size: 28px;
-  line-height: 40px;
   width: 40px;
   height: 40px;
   color: #4695D2;
   background: #ffffff;
   border-radius: 20px;
-  display: block;
+  display: inline-block;
   text-align: center;
+  margin-right: 10px;
 }
 
 footer .social-link:hover {
   background: #4695D2;
   color: #ffffff;
+}
+
+footer .social-link .fa {
+  line-height: 40px;
 }
 
 .btn {
@@ -727,14 +731,14 @@ footer .social-link:hover {
   }
 
   footer .copyright {
-    padding-top: 32px;
+    padding-top: 17px;
     font-size: 12px;
   }
 
   footer .footer-left {
     float: left;
     width: 45%;
-    padding: 10px;
+    padding: 20px 10px;
   }
 
   footer .footer-right {
