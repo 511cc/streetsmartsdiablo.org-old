@@ -347,6 +347,13 @@ footer .copyright a {
   color: #ffffff;
 }
 
+footer .footer-right {
+  position: absolute;
+  top: 53px;
+  margin-top: 5px;
+  width: 100%;
+}
+
 footer .footer-logo {
   text-indent: -9999px;
   display: block;
@@ -375,6 +382,18 @@ footer .footer-logo-street-smarts {
 
 footer .footer-left {
   padding: 90px 20px 20px 20px;
+}
+
+footer .street-smarts-link {
+  background: #ffffff;
+  border-radius: 8px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  padding: 4px 15px;
+  display: block;
+  margin: 10px auto;
+  width: 200px;
 }
 
 footer .social-link {
@@ -735,6 +754,14 @@ footer .social-link .fa {
     font-size: 12px;
   }
 
+  footer .street-smarts-link {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin: 0 0 0 -110px;
+    width: auto;
+  }
+
   footer .footer-left {
     float: left;
     width: 45%;
@@ -745,6 +772,9 @@ footer .social-link .fa {
     float: right;
     width: 45%;
     padding: 10px;
+    position: relative;;
+    top: 0;
+    margin: 0;
   }
 }
 

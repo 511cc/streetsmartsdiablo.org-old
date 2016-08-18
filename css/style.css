@@ -301,6 +301,10 @@ footer .copyright {
   padding-top: 20px;
 }
 
+footer .copyright a {
+  color: #ffffff;
+}
+
 footer .footer-logo {
   text-indent: -9999px;
   display: block;
