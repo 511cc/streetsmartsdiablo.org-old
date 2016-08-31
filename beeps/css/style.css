@@ -305,13 +305,17 @@ header .menu ul li a.active:hover {
   height: auto;
 }
 
-.box.box-tour-schedule h1 {
+.box.box-assemblies h1 {
   text-align: center;
 }
 
-.box.box-tour-schedule .box-text {
+.box.box-assemblies .box-text {
   overflow: hidden;
   line-height: 20px;
+}
+
+.box-assemblies-school {
+  padding-top: 8px;
 }
 
 .school-assemblies-background {
@@ -721,10 +725,22 @@ footer .social-link .fa {
     margin: 0;
   }
 
-  .box.box-tour-schedule {
+  .box.box-assemblies {
     height: auto;
     width: 60%;
     float: right;
+  }
+
+  .box-assemblies-school {
+    width: 250px;
+    padding: 6px 0 6px 100px;
+    display: inline-block;
+  }
+
+  .box-assemblies-date {
+    width: 70px;
+    padding: 6px 0;
+    display: inline-block;
   }
 
   footer .footer-logo {

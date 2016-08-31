@@ -315,7 +315,7 @@ header .menu ul li a.active:hover {
   line-height: 20px;
 }
 
-.box.box-at-your-school-schedule .school-date {
+.box.box-at-your-school-schedule .box-assemblies-date {
   margin-bottom: 8px;
 }
 
@@ -645,12 +645,13 @@ footer .street-smarts-link {
     width: 60%;
   }
 
-  .box.box-at-your-school-schedule .school-name {
+  .box.box-at-your-school-schedule .box-assemblies-school {
     width: 50%;
     float: left;
+    clear: both;
   }
 
-  .box.box-at-your-school-schedule .school-date {
+  .box.box-at-your-school-schedule .box-assemblies-date {
     width: 50%;
     float: right;
     text-align: right;
