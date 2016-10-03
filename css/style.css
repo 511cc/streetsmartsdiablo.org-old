@@ -109,11 +109,8 @@ header .menu ul li a.active:hover {
   display: block;
 }
 
-.top-section-content .top-section-photo {
-  background: url("../img/header-home.jpg") center center no-repeat;
-  background-size: cover;
+.section-photo {
   border-radius: 5px;
-  height: 100px;
   width: 100%;
 }
 
@@ -489,8 +486,7 @@ footer .social-link .fa {
     width: 936px;
   }
 
-  .top-section-content .top-section-photo {
-    background-size: 629px 196px;
+  .section-photo {
     height: 196px;
     float: left;
     width: 629px;
@@ -702,10 +698,6 @@ footer .social-link .fa {
 
   header .logo {
     background-image: url("../img/street-smarts-logo@2x.png");
-  }
-
-  .top-section-content .top-section-photo {
-    background-image: url("../img/header-home@2x.jpg");
   }
 
   .top-section-photo {
