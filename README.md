@@ -20,3 +20,6 @@ The site is constructed in HTML and CSS. To run locally, open the index.html fil
 
 ## Current Use
 Live on streetsmartsdiablo.org from January 2016 to December 2016. Replaced by a visually similar Wordpress template in January 2017.
+
+## License
+This project is licensed under GNU General Public License v3.0.
